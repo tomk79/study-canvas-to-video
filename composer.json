@@ -1,0 +1,54 @@
+{
+    "name": "tomk79/study-canvas-to-video",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Tomoya Koyanagi",
+            "email": "tomk79@gmail.com"
+        }
+    ],
+	"scripts": {
+		"start": [
+			"@php ./src_px2/.px_execute.php \"/?PX=admin.serve\""
+		],
+		"start-pub": [
+			"@php ./src_px2/.px_execute.php \"/?PX=admin.serve.pub\""
+		],
+		"build": [
+			"@php ./src_px2/.px_execute.php \"/?PX=publish.run\""
+		]
+	},
+    "config": {
+        "process-timeout": 0
+    },
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=7.3.0" ,
+		"broccoli-html-editor/broccoli-field-summernote": "~0.3",
+		"pickles2/px-fw-2.x": "~2.1",
+		"pickles2/px2-blog-kit": "~0.1.0",
+		"pickles2/px2-paprika": "~0.3",
+		"pickles2/px2-path-resolver": "^2.0",
+		"pickles2/px2-px2dthelper": "~2.2",
+		"pickles2/px2-clover": "~0.3",
+		"pickles2/px2-dec": "^2.0",
+		"pickles2/px2-multitheme": "^2.0",
+		"pickles2/px2-remove-attr": "^2.0",
+		"pickles2/px2-sitemapexcel": "^2.0",
+		"pickles2/px2-publish-ex": "^2.0",
+		"pickles2/px2style": "~3.0",
+		"tomk79/h": "*",
+		"tomk79/broccoli-module-medias": "^0.1",
+		"tomk79/csv2json": "1.*",
+		"tomk79/px2-error-reporter": "~0.1",
+		"tomk79/px2-page-list-generator": "^2.0",
+		"tomk79/px2-scss": "~0.1",
+		"tomk79/px2-serve": "^0.1",
+		"vlucas/phpdotenv": "~5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tomk79\\StudyCanvasToVideo\\": "src/"
+        }
+    }
+}

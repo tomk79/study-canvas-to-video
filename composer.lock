@@ -1,0 +1,3057 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3b435ab86b4145cc0e6c121bf0d5a769",
+    "packages": [
+        {
+            "name": "broccoli-html-editor/broccoli-field-summernote",
+            "version": "0.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-field-summernote.git",
+                "reference": "aa255ffea22d11990b91be4c57f2006665ca2eea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-field-summernote/zipball/aa255ffea22d11990b91be4c57f2006665ca2eea",
+                "reference": "aa255ffea22d11990b91be4c57f2006665ca2eea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
+                "tomk79/broccoli-module-std-document": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/summernote.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "WYSIWYGエディタ \"summernote\" によるフィールド機能を追加します。",
+            "keywords": [
+                "broccoli",
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/broccoli-html-editor/broccoli-field-summernote/issues",
+                "source": "https://github.com/broccoli-html-editor/broccoli-field-summernote/tree/0.3.2"
+            },
+            "time": "2023-11-12T16:01:21+00:00"
+        },
+        {
+            "name": "broccoli-html-editor/broccoli-field-table",
+            "version": "0.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-field-table.git",
+                "reference": "c4e3c3f14740d76310bd5e940bb63b358dcc0e05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-field-table/zipball/c4e3c3f14740d76310bd5e940bb63b358dcc0e05",
+                "reference": "c4e3c3f14740d76310bd5e940bb63b358dcc0e05",
+                "shasum": ""
+            },
+            "require": {
+                "michelf/php-markdown": "~1.8",
+                "php": ">=5.4.0",
+                "tomk79/filesystem": ">=1.0",
+                "tomk79/php-excel2html": "^0.0.8||~0.1",
+                "tomk79/request": ">=1.0"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-html-editor": "~1.0||~0.5.2",
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "broccoliHtmlEditor\\broccoliFieldTable\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/broccoli-html-editor/broccoli-field-table/issues",
+                "source": "https://github.com/broccoli-html-editor/broccoli-field-table/tree/0.4.1"
+            },
+            "time": "2023-11-12T16:09:31+00:00"
+        },
+        {
+            "name": "broccoli-html-editor/broccoli-html-editor",
+            "version": "1.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/broccoli-html-editor/broccoli-html-editor.git",
+                "reference": "82bcfbc796f56f5d3011d6a4bce49261524f0e83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/broccoli-html-editor/broccoli-html-editor/zipball/82bcfbc796f56f5d3011d6a4bce49261524f0e83",
+                "reference": "82bcfbc796f56f5d3011d6a4bce49261524f0e83",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "michelf/php-markdown": ">=1.8",
+                "php": ">=7.3.0",
+                "scssphp/scssphp": ">=1.4",
+                "tomk79/filesystem": "^1.0",
+                "tomk79/langbank": "^0.3.0||^0.2.0||^0.1.0||^0.0.4",
+                "twig/twig": ">=1.35"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "tomk79/request": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/simple_html_dom.php"
+                ],
+                "psr-4": {
+                    "broccoliHtmlEditor\\": [
+                        "php",
+                        "php/fncs",
+                        "php/helper"
+                    ],
+                    "broccoliHtmlEditor\\fields\\": [
+                        "fields/php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "GUI HTML Editor Library.",
+            "keywords": [
+                "broccoli-html-editor"
+            ],
+            "support": {
+                "issues": "https://github.com/broccoli-html-editor/broccoli-html-editor/issues",
+                "source": "https://github.com/broccoli-html-editor/broccoli-html-editor/tree/1.1.0"
+            },
+            "time": "2023-11-12T15:55:33+00:00"
+        },
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/bbc513d79acf6691fa9cf10f192c90dd2957f18c",
+                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.17.0"
+            },
+            "time": "2023-11-17T15:01:25+00:00"
+        },
+        {
+            "name": "graham-campbell/result-type",
+            "version": "1.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Result-Type.git",
+                "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/fbd48bce38f73f8a4ec8583362e732e4095e5862",
+                "reference": "fbd48bce38f73f8a4ec8583362e732e4095e5862",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0",
+                "phpoption/phpoption": "^1.9.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\ResultType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                }
+            ],
+            "description": "An Implementation Of The Result Type",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Result Type",
+                "Result-Type",
+                "result"
+            ],
+            "support": {
+                "issues": "https://github.com/GrahamCampbell/Result-Type/issues",
+                "source": "https://github.com/GrahamCampbell/Result-Type/tree/v1.1.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/graham-campbell/result-type",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-12T22:16:48+00:00"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "1b168bfee60889547e1fe55b9afdf055f6d3c58d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/1b168bfee60889547e1fe55b9afdf055f6d3c58d",
+                "reference": "1b168bfee60889547e1fe55b9afdf055f6d3c58d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6",
+                "squizlabs/php_codesniffer": "~2.5",
+                "twbs/bootstrap": "~4.3",
+                "zurb/foundation": "~6.5"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/leafo/scssphp/issues",
+                "source": "https://github.com/leafo/scssphp/tree/v0.8.2"
+            },
+            "abandoned": "scssphp/scssphp",
+            "time": "2019-05-09T18:51:51+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "b8174494eda667f7d13876b4a7bfef0f62a7c0d1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/b8174494eda667f7d13876b4a7bfef0f62a7c0d1",
+                "reference": "b8174494eda667f7d13876b4a7bfef0f62a7c0d1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "php-64bit": "^8.1"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "guzzlehttp/guzzle": "^7.5",
+                "mikey179/vfsstream": "^1.6",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpunit": "^10.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "suggest": {
+                "guzzlehttp/psr7": "^2.4",
+                "psr/http-message": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/zipstream",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2023-06-21T14:59:35+00:00"
+        },
+        {
+            "name": "markbaker/complex",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPComplex.git",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPComplex/zipball/95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "reference": "95c56caa1cf5c766ad6d65b6344b807c1e8405b9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Complex\\": "classes/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@lange.demon.co.uk"
+                }
+            ],
+            "description": "PHP Class for working with complex numbers",
+            "homepage": "https://github.com/MarkBaker/PHPComplex",
+            "keywords": [
+                "complex",
+                "mathematics"
+            ],
+            "support": {
+                "issues": "https://github.com/MarkBaker/PHPComplex/issues",
+                "source": "https://github.com/MarkBaker/PHPComplex/tree/3.0.2"
+            },
+            "time": "2022-12-06T16:21:08+00:00"
+        },
+        {
+            "name": "markbaker/matrix",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarkBaker/PHPMatrix.git",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarkBaker/PHPMatrix/zipball/728434227fe21be27ff6d86621a1b13107a2562c",
+                "reference": "728434227fe21be27ff6d86621a1b13107a2562c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "^4.0",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
+                "sebastian/phpcpd": "^4.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Matrix\\": "classes/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker",
+                    "email": "mark@demon-angel.eu"
+                }
+            ],
+            "description": "PHP Class for working with matrices",
+            "homepage": "https://github.com/MarkBaker/PHPMatrix",
+            "keywords": [
+                "mathematics",
+                "matrix",
+                "vector"
+            ],
+            "support": {
+                "issues": "https://github.com/MarkBaker/PHPMatrix/issues",
+                "source": "https://github.com/MarkBaker/PHPMatrix/tree/3.0.1"
+            },
+            "time": "2022-12-02T22:17:43+00:00"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "5024d623c1a057dcd2d076d25b7d270a1d0d55f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/5024d623c1a057dcd2d076d25b7d270a1d0d55f3",
+                "reference": "5024d623c1a057dcd2d076d25b7d270a1d0d55f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.3 <5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Michelf\\": "Michelf/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "https://daringfireball.net/"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "support": {
+                "issues": "https://github.com/michelf/php-markdown/issues",
+                "source": "https://github.com/michelf/php-markdown/tree/1.9.1"
+            },
+            "time": "2021-11-24T02:52:38+00:00"
+        },
+        {
+            "name": "phpoffice/phpspreadsheet",
+            "version": "1.29.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
+                "reference": "fde2ccf55eaef7e86021ff1acce26479160a0fa0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/fde2ccf55eaef7e86021ff1acce26479160a0fa0",
+                "reference": "fde2ccf55eaef7e86021ff1acce26479160a0fa0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "ext-gd": "*",
+                "ext-iconv": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "ext-xml": "*",
+                "ext-xmlreader": "*",
+                "ext-xmlwriter": "*",
+                "ext-zip": "*",
+                "ext-zlib": "*",
+                "ezyang/htmlpurifier": "^4.15",
+                "maennchen/zipstream-php": "^2.1 || ^3.0",
+                "markbaker/complex": "^3.0",
+                "markbaker/matrix": "^3.0",
+                "php": "^7.4 || ^8.0",
+                "psr/http-client": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
+                "dompdf/dompdf": "^1.0 || ^2.0",
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "mitoteam/jpgraph": "^10.3",
+                "mpdf/mpdf": "^8.1.1",
+                "phpcompatibility/php-compatibility": "^9.3",
+                "phpstan/phpstan": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^8.5 || ^9.0 || ^10.0",
+                "squizlabs/php_codesniffer": "^3.7",
+                "tecnickcom/tcpdf": "^6.5"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Option for rendering PDF with PDF Writer",
+                "ext-intl": "PHP Internationalization Functions",
+                "mitoteam/jpgraph": "Option for rendering charts, or including charts with PDF or HTML Writers",
+                "mpdf/mpdf": "Option for rendering PDF with PDF Writer",
+                "tecnickcom/tcpdf": "Option for rendering PDF with PDF Writer"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpSpreadsheet\\": "src/PhpSpreadsheet"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maarten Balliauw",
+                    "homepage": "https://blog.maartenballiauw.be"
+                },
+                {
+                    "name": "Mark Baker",
+                    "homepage": "https://markbakeruk.net"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "https://rootslabs.net"
+                },
+                {
+                    "name": "Erik Tilt"
+                },
+                {
+                    "name": "Adrien Crivelli"
+                }
+            ],
+            "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+            "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+            "keywords": [
+                "OpenXML",
+                "excel",
+                "gnumeric",
+                "ods",
+                "php",
+                "spreadsheet",
+                "xls",
+                "xlsx"
+            ],
+            "support": {
+                "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.29.0"
+            },
+            "time": "2023-06-14T22:48:31+00:00"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "416ca2ac2a84555b785a98002d613fe13d1d1c2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/416ca2ac2a84555b785a98002d613fe13d1d1c2f",
+                "reference": "416ca2ac2a84555b785a98002d613fe13d1d1c2f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                },
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpOption\\": "src/PhpOption/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "support": {
+                "issues": "https://github.com/schmittjoh/php-option/issues",
+                "source": "https://github.com/schmittjoh/php-option/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-12T22:52:20+00:00"
+        },
+        {
+            "name": "pickles2/lib-px2-contents-editor",
+            "version": "2.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/lib-px2-contents-editor.git",
+                "reference": "2fe02ac6d644f05089228a87463ecaa1af3b5060"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/lib-px2-contents-editor/zipball/2fe02ac6d644f05089228a87463ecaa1af3b5060",
+                "reference": "2fe02ac6d644f05089228a87463ecaa1af3b5060",
+                "shasum": ""
+            },
+            "require": {
+                "broccoli-html-editor/broccoli-field-table": "~0.3",
+                "broccoli-html-editor/broccoli-html-editor": "~1.0",
+                "php": ">=7.3.0",
+                "tomk79/langbank": "~0.3"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-fess": "*",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-clover": "~0.2",
+                "pickles2/px2-dec": "~2.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-path-resolver": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "pickles2/px2-remove-attr": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0||~2.1",
+                "tomk79/broccoli-module-lp": "~0.1",
+                "tomk79/px2-serve": "~0.1.3",
+                "vlucas/phpdotenv": "~5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pickles2\\libs\\contentsEditor\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 contents editor library.",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/lib-px2-contents-editor/issues",
+                "source": "https://github.com/pickles2/lib-px2-contents-editor/tree/2.2.2"
+            },
+            "time": "2023-11-12T16:15:23+00:00"
+        },
+        {
+            "name": "pickles2/lib-px2-module-editor",
+            "version": "0.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/lib-px2-module-editor.git",
+                "reference": "467e12383a049f7a0bfe7278e86a675f1a5a21d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/lib-px2-module-editor/zipball/467e12383a049f7a0bfe7278e86a675f1a5a21d2",
+                "reference": "467e12383a049f7a0bfe7278e86a675f1a5a21d2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "pickles2/lib-px2-contents-editor": "~2.1",
+                "tomk79/langbank": "~1.0||~0.3"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-fess": "*",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0||~2.1",
+                "pickles2/px2-dec": "~2.1",
+                "pickles2/px2-multitheme": "~2.1",
+                "pickles2/px2-path-resolver": "~2.1",
+                "pickles2/px2-px2dthelper": "~2.1",
+                "pickles2/px2-remove-attr": "~2.1",
+                "pickles2/px2-sitemapexcel": "~2.0||~2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/gpi.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 module editor library.",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/lib-px2-module-editor/issues",
+                "source": "https://github.com/pickles2/lib-px2-module-editor/tree/0.4.0"
+            },
+            "time": "2023-08-29T12:45:33+00:00"
+        },
+        {
+            "name": "pickles2/lib-px2-theme-editor",
+            "version": "0.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/lib-px2-theme-editor.git",
+                "reference": "9acc53210c3bfc9f8b236863bb55921cb62c8628"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/lib-px2-theme-editor/zipball/9acc53210c3bfc9f8b236863bb55921cb62c8628",
+                "reference": "9acc53210c3bfc9f8b236863bb55921cb62c8628",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.3.0",
+                "pickles2/px2agent": "~0.0",
+                "tomk79/color-utils": "^0.0.1",
+                "tomk79/filesystem": "~1.0",
+                "tomk79/langbank": "~0.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0||~2.1",
+                "pickles2/px2-clover": "~0.2",
+                "pickles2/px2-dec": "~2.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-path-resolver": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "pickles2/px2-remove-attr": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0||~2.1",
+                "pickles2/px2style": "~3.1",
+                "tomk79/px2-error-reporter": "~0.1",
+                "tomk79/px2-serve": "^0.1",
+                "vlucas/phpdotenv": "~5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pickles2\\libs\\themeEditor\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/lib-px2-theme-editor/issues",
+                "source": "https://github.com/pickles2/lib-px2-theme-editor/tree/0.2.9"
+            },
+            "time": "2023-11-12T16:21:22+00:00"
+        },
+        {
+            "name": "pickles2/px-fw-2.x",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px-fw-2.x.git",
+                "reference": "68e356e74d53fb229eaddc6a1be9c33a3e698ee6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px-fw-2.x/zipball/68e356e74d53fb229eaddc6a1be9c33a3e698ee6",
+                "reference": "68e356e74d53fb229eaddc6a1be9c33a3e698ee6",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "ext-pdo_sqlite": "*",
+                "michelf/php-markdown": "~1.6",
+                "php": ">=7.3.0",
+                "scssphp/scssphp": "^1.4",
+                "tomk79/filesystem": "~1.1",
+                "tomk79/request": "~1.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "picklesFramework2\\": [
+                        "php"
+                    ],
+                    "picklesFramework2\\theme\\": [
+                        "theme/php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles Framework(PxFW) は、静的で大きなウェブサイトを効率よく構築できる オープンソースのHTML生成ツールです。",
+            "keywords": [
+                "pickles",
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px-fw-2.x/issues",
+                "source": "https://github.com/pickles2/px-fw-2.x/tree/2.1.19"
+            },
+            "time": "2023-11-12T15:05:04+00:00"
+        },
+        {
+            "name": "pickles2/px2-blog-kit",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-blog-kit.git",
+                "reference": "4a1d20af08dc86195c8c6896ddbfd688a39a9058"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-blog-kit/zipball/4a1d20af08dc86195c8c6896ddbfd688a39a9058",
+                "reference": "4a1d20af08dc86195c8c6896ddbfd688a39a9058",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "twig/twig": ">=1.35"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-clover": "^0.2",
+                "pickles2/px2-dec": "^2.0",
+                "pickles2/px2-multitheme": "^2.0",
+                "pickles2/px2-paprika": "^0.3",
+                "pickles2/px2-path-resolver": "^2.0",
+                "pickles2/px2-publish-ex": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
+                "pickles2/px2-remove-attr": "^2.0",
+                "pickles2/px2-sitemapexcel": "^2.0",
+                "pickles2/px2style": "~3.0",
+                "tomk79/px2-error-reporter": "~0.1",
+                "tomk79/px2-scss": "~0.1",
+                "tomk79/px2-serve": "^0.1",
+                "vlucas/phpdotenv": "~5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pickles2\\px2BlogKit\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、ブログ管理機能を追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-blog-kit/issues",
+                "source": "https://github.com/pickles2/px2-blog-kit/tree/0.1.2"
+            },
+            "time": "2023-08-29T12:21:52+00:00"
+        },
+        {
+            "name": "pickles2/px2-clover",
+            "version": "0.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-clover.git",
+                "reference": "0defdadc67cf54ca46bfc30162f7745c1fc236c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-clover/zipball/0defdadc67cf54ca46bfc30162f7745c1fc236c9",
+                "reference": "0defdadc67cf54ca46bfc30162f7745c1fc236c9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "pickles2/px-fw-2.x": "~2.1",
+                "pickles2/px2-px2dthelper": "~2.2",
+                "tomk79/langbank": "~0.2",
+                "tomk79/remote-finder": "~0.2",
+                "twig/twig": ">=3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px2-blog-kit": "~0.1.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0",
+                "pickles2/px2style": "~3.0",
+                "tomk79/microtime-recorder": "~0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\px2clover\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 のプラグイン型CMS",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-clover/issues",
+                "source": "https://github.com/pickles2/px2-clover/tree/0.3.1"
+            },
+            "time": "2023-11-12T16:30:28+00:00"
+        },
+        {
+            "name": "pickles2/px2-dec",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-dec.git",
+                "reference": "b67263f3568d6a17b017137b09effe6cc022e191"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-dec/zipball/b67263f3568d6a17b017137b09effe6cc022e191",
+                "reference": "b67263f3568d6a17b017137b09effe6cc022e191",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/broccoli-module-fess": "dev-develop",
+                "pickles2/broccoli-module-plain-html-elements": "dev-develop",
+                "pickles2/px-fw-2.x": "~2",
+                "pickles2/px2-px2dthelper": "~2",
+                "pickles2/px2-sitemapexcel": "~2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/dec.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "px2-dec は、Pickles 2 に DEC 拡張機能を追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-dec/issues",
+                "source": "https://github.com/pickles2/px2-dec/tree/2.1.0"
+            },
+            "time": "2022-01-08T09:28:06+00:00"
+        },
+        {
+            "name": "pickles2/px2-multitheme",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-multitheme.git",
+                "reference": "a2b78b3e0e2f5d8c26e5da63086a1518e9c78094"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-multitheme/zipball/a2b78b3e0e2f5d8c26e5da63086a1518e9c78094",
+                "reference": "a2b78b3e0e2f5d8c26e5da63086a1518e9c78094",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "~3.0.0",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/broccoli-module-plain-html-elements": "~0.1",
+                "pickles2/px-fw-2.x": "~2.1|~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "tomk79/filesystem": "1.*"
+            },
+            "type": "library",
+            "extra": {
+                "px2package": {
+                    "name": "pickles2/px2-multitheme",
+                    "type": "processor"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "php/theme.php",
+                    "php/template_utility.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "px2-multitheme は、複数のテーマを同時に管理する機能を Pickles 2 に追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-multitheme/issues",
+                "source": "https://github.com/pickles2/px2-multitheme/tree/develop"
+            },
+            "time": "2023-07-01T17:04:57+00:00"
+        },
+        {
+            "name": "pickles2/px2-paprika",
+            "version": "0.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-paprika.git",
+                "reference": "7721c12bbdeb49ff40d0bc8dadb1da310e17be3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/7721c12bbdeb49ff40d0bc8dadb1da310e17be3f",
+                "reference": "7721c12bbdeb49ff40d0bc8dadb1da310e17be3f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "~1.0",
+                "tomk79/request": "~1.0"
+            },
+            "require-dev": {
+                "jms/serializer": "<1.8",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-path-resolver": "~2.0",
+                "pickles2/px2-publish-ex": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "pickles2/px2-remove-attr": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "picklesFramework2\\paprikaFramework\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Publishing Lightweight Web Application with \"Pickles 2\".",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-paprika/issues",
+                "source": "https://github.com/pickles2/px2-paprika/tree/0.4.0"
+            },
+            "time": "2023-04-22T12:42:35+00:00"
+        },
+        {
+            "name": "pickles2/px2-path-resolver",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-path-resolver.git",
+                "reference": "e89026400bfbbc3e2605de13b7689d6ec3d30888"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-path-resolver/zipball/e89026400bfbbc3e2605de13b7689d6ec3d30888",
+                "reference": "e89026400bfbbc3e2605de13b7689d6ec3d30888",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/broccoli-module-fess": "dev-master",
+                "pickles2/broccoli-module-plain-html-elements": "dev-master",
+                "pickles2/px-fw-2.x": "^2.0",
+                "pickles2/px2-px2dthelper": "^2.0",
+                "pickles2/px2-sitemapexcel": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\pathResolver\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、相対パス・絶対パスでの書き出しオプションを追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-path-resolver/issues",
+                "source": "https://github.com/pickles2/px2-path-resolver/tree/2.1.1"
+            },
+            "time": "2023-02-11T07:52:35+00:00"
+        },
+        {
+            "name": "pickles2/px2-publish-ex",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-publish-ex.git",
+                "reference": "05c0e2655b29a43e61c0a820e136d6a029dc2fb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-publish-ex/zipball/05c0e2655b29a43e61c0a820e136d6a029dc2fb3",
+                "reference": "05c0e2655b29a43e61c0a820e136d6a029dc2fb3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "jms/serializer": "<1.8",
+                "phpdocumentor/phpdocumentor": "~3.0.0",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.1||~2.0",
+                "pickles2/px2-multitheme": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/simple_html_dom.php"
+                ],
+                "psr-4": {
+                    "tomk79\\pickles2\\publishEx\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "複数のデバイス向けのバージョンをパブリッシュできる、 Pickles 2 用のパブリッシュプラグイン。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-publish-ex/issues",
+                "source": "https://github.com/pickles2/px2-publish-ex/tree/2.1.3"
+            },
+            "time": "2023-09-23T16:27:22+00:00"
+        },
+        {
+            "name": "pickles2/px2-px2dthelper",
+            "version": "2.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-px2dthelper.git",
+                "reference": "aeadfc34260a9af8abc2957060570cc19d134684"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-px2dthelper/zipball/aeadfc34260a9af8abc2957060570cc19d134684",
+                "reference": "aeadfc34260a9af8abc2957060570cc19d134684",
+                "shasum": ""
+            },
+            "require": {
+                "broccoli-html-editor/broccoli-html-editor": "~1.0||~0.4",
+                "michelf/php-markdown": "~1.6",
+                "php": ">=7.3.0",
+                "pickles2/lib-px2-contents-editor": "~2.2",
+                "pickles2/lib-px2-module-editor": "~0.4",
+                "pickles2/lib-px2-theme-editor": "~0.2",
+                "tomk79/langbank": "~0.3",
+                "tomk79/php-excel2html": "^0.0.8||~0.1"
+            },
+            "require-dev": {
+                "broccoli-html-editor/broccoli-module-fess": "*",
+                "broccoli-html-editor/broccoli-module-plain-html-elements": "*",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.1||~2.0",
+                "pickles2/px2-blog-kit": "~0.1.0",
+                "pickles2/px2-multitheme": "~2.1",
+                "pickles2/px2-sitemapexcel": "~2.2",
+                "tomk79/filesystem": "~1.1",
+                "tomk79/px2-serve": "~0.1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/simple_html_dom.php"
+                ],
+                "psr-4": {
+                    "tomk79\\pickles2\\px2dthelper\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 用のプラグインです。Pickles 2 アプリケーション と連携させるためのAPIを提供します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-px2dthelper/issues",
+                "source": "https://github.com/pickles2/px2-px2dthelper/tree/2.2.1"
+            },
+            "time": "2023-11-12T16:25:21+00:00"
+        },
+        {
+            "name": "pickles2/px2-remove-attr",
+            "version": "2.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-remove-attr.git",
+                "reference": "a200802a9f162400e01e7028d049f995b9591cd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-remove-attr/zipball/a200802a9f162400e01e7028d049f995b9591cd8",
+                "reference": "a200802a9f162400e01e7028d049f995b9591cd8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/broccoli-module-fess": "dev-master",
+                "pickles2/broccoli-module-plain-html-elements": "dev-master",
+                "pickles2/px-fw-2.x": "~2.1",
+                "pickles2/px2-px2dthelper": "2.*",
+                "pickles2/px2-sitemapexcel": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "px2-remove-attr は、Pickles 2 に、HTMLドキュメントから指定した属性を削除する機能を提供します。",
+            "keywords": [
+                "pickles"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-remove-attr/issues",
+                "source": "https://github.com/pickles2/px2-remove-attr/tree/2.1.1"
+            },
+            "time": "2023-02-11T08:15:12+00:00"
+        },
+        {
+            "name": "pickles2/px2-sitemapexcel",
+            "version": "2.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2-sitemapexcel.git",
+                "reference": "1901103e8a934aad9419366c33412401c8d74474"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2-sitemapexcel/zipball/1901103e8a934aad9419366c33412401c8d74474",
+                "reference": "1901103e8a934aad9419366c33412401c8d74474",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "phpoffice/phpspreadsheet": "^1.13",
+                "tomk79/filesystem": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "px2package": {
+                    "name": "pickles2/px2-sitemapexcel",
+                    "type": "processor"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\sitemap_excel\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、サイトマップをグラフィカルなエクセル形式(xlsx)で編集できる機能を追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2-sitemapexcel/issues",
+                "source": "https://github.com/pickles2/px2-sitemapexcel/tree/2.3.1"
+            },
+            "time": "2023-11-12T15:10:59+00:00"
+        },
+        {
+            "name": "pickles2/px2agent",
+            "version": "0.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/php-px2agent.git",
+                "reference": "37e9a8c2cc0227468e5cde4094057fbd79e03a49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/php-px2agent/zipball/37e9a8c2cc0227468e5cde4094057fbd79e03a49",
+                "reference": "37e9a8c2cc0227468e5cde4094057fbd79e03a49",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "~1.0",
+                "tomk79/request": "~1.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "~3.0.0",
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/px2agent.php",
+                    "php/px2project.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 と PHP スクリプトを仲介するAPIを提供します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/php-px2agent/issues",
+                "source": "https://github.com/pickles2/php-px2agent/tree/0.2.0"
+            },
+            "time": "2023-06-24T15:52:39+00:00"
+        },
+        {
+            "name": "pickles2/px2style",
+            "version": "3.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pickles2/px2style.git",
+                "reference": "ade5c3fec5e5ec162c3bc53f61d5ff6d69bd4f42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pickles2/px2style/zipball/ade5c3fec5e5ec162c3bc53f61d5ff6d69bd4f42",
+                "reference": "ade5c3fec5e5ec162c3bc53f61d5ff6d69bd4f42",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-clover": "~0.2",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-path-resolver": "~2.0",
+                "pickles2/px2-publish-ex": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "tomk79/px2-serve": "~0.1.3",
+                "vlucas/phpdotenv": "~5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pickles2\\px2style\\": [
+                        "php/"
+                    ],
+                    "pickles2\\px2style\\fields\\": [
+                        "fields/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 CSS Components.",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/pickles2/px2style/issues",
+                "source": "https://github.com/pickles2/px2style/tree/3.2.4"
+            },
+            "time": "2023-11-12T15:18:32+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-client"
+            },
+            "time": "2023-09-23T14:17:50+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "7037f4b0950474e9d1350e8df89b15f1842085f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/7037f4b0950474e9d1350e8df89b15f1842085f6",
+                "reference": "7037f4b0950474e9d1350e8df89b15f1842085f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "PSR-17: Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory"
+            },
+            "time": "2023-09-22T11:16:44+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
+            },
+            "time": "2023-04-04T09:54:51+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
+            "time": "2022-04-08T16:41:45+00:00"
+        },
+        {
+            "name": "scssphp/scssphp",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scssphp/scssphp.git",
+                "reference": "6664aec4a436987f8386c5ea77f2977db8b73955"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/6664aec4a436987f8386c5ea77f2977db8b73955",
+                "reference": "6664aec4a436987f8386c5ea77f2977db8b73955",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.3 || ^9.4",
+                "sass/sass-spec": "*",
+                "squizlabs/php_codesniffer": "~3.5",
+                "symfony/phpunit-bridge": "^5.1",
+                "thoughtbot/bourbon": "^7.0",
+                "twbs/bootstrap": "~5.0",
+                "twbs/bootstrap4": "4.6.1",
+                "zurb/foundation": "~6.7.0"
+            },
+            "suggest": {
+                "ext-iconv": "Can be used as fallback when ext-mbstring is not available",
+                "ext-mbstring": "For best performance, mbstring should be installed as it is faster than ext-iconv"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "forward-command": false,
+                    "bin-links": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ScssPhp\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthon Pang",
+                    "email": "apang@softwaredevelopment.ca",
+                    "homepage": "https://github.com/robocoder"
+                },
+                {
+                    "name": "Cédric Morin",
+                    "email": "cedric@yterium.com",
+                    "homepage": "https://github.com/Cerdic"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://scssphp.github.io/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "support": {
+                "issues": "https://github.com/scssphp/scssphp/issues",
+                "source": "https://github.com/scssphp/scssphp/tree/1.x"
+            },
+            "time": "2023-11-17T21:56:17+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb",
+                "reference": "ea208ce43cbb04af6867b4fdddb1bdbf84cc28cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.28-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.28.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-01-26T09:26:14+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "42292d99c55abe617799667f454222c54c60e229"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/42292d99c55abe617799667f454222c54c60e229",
+                "reference": "42292d99c55abe617799667f454222c54c60e229",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.28-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-07-28T09:04:16+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "6caa57379c4aec19c0a12a38b59b26487dcfe4b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/6caa57379c4aec19c0a12a38b59b26487dcfe4b5",
+                "reference": "6caa57379c4aec19c0a12a38b59b26487dcfe4b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.28-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.28.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-01-26T09:26:14+00:00"
+        },
+        {
+            "name": "tomk79/broccoli-module-medias",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/broccoli-module-medias.git",
+                "reference": "0aa21528505f4a3a663a233e4ad9269a59f0255f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/broccoli-module-medias/zipball/0aa21528505f4a3a663a233e4ad9269a59f0255f",
+                "reference": "0aa21528505f4a3a663a233e4ad9269a59f0255f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "pickles2/px-fw-2.x": "dev-develop",
+                "pickles2/px2-multitheme": "dev-develop",
+                "pickles2/px2-px2dthelper": "dev-develop",
+                "tomk79/broccoli-module-std-document": "dev-develop"
+            },
+            "type": "library",
+            "autoload": {
+                "files": []
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "broccoli",
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/broccoli-module-medias/issues",
+                "source": "https://github.com/tomk79/broccoli-module-medias/tree/0.1.0"
+            },
+            "time": "2019-07-09T18:54:15+00:00"
+        },
+        {
+            "name": "tomk79/color-utils",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/color_utils.git",
+                "reference": "64db03ac253fe22f9f80faa27485bca16450bb7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/color_utils/zipball/64db03ac253fe22f9f80faa27485bca16450bb7d",
+                "reference": "64db03ac253fe22f9f80faa27485bca16450bb7d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\colorUtils\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "色コードに関するユーティリティ集です。",
+            "support": {
+                "issues": "https://github.com/tomk79/color_utils/issues",
+                "source": "https://github.com/tomk79/color_utils/tree/0.0.1"
+            },
+            "time": "2021-05-17T06:58:46+00:00"
+        },
+        {
+            "name": "tomk79/csv2json",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/csv2json.git",
+                "reference": "600e59cf0ae85449458410361c46a6cffc834fba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/csv2json/zipball/600e59cf0ae85449458410361c46a6cffc834fba",
+                "reference": "600e59cf0ae85449458410361c46a6cffc834fba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "tomk79/filesystem": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\": [
+                        "php/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "CSVを読み込んで、連想配列構造に変換する。それをJSONに出力する。",
+            "keywords": [
+                "csv"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/csv2json/issues",
+                "source": "https://github.com/tomk79/csv2json/tree/1.0.1"
+            },
+            "time": "2023-02-04T16:52:26+00:00"
+        },
+        {
+            "name": "tomk79/filesystem",
+            "version": "1.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/filesystem.git",
+                "reference": "bfd57b1d912499426d88697a95e0229c2422aeea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/filesystem/zipball/bfd57b1d912499426d88697a95e0229c2422aeea",
+                "reference": "bfd57b1d912499426d88697a95e0229c2422aeea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com",
+                    "homepage": "https://www.pxt.jp/"
+                }
+            ],
+            "description": "Simple filesystem utility for PHP.",
+            "keywords": [
+                "filesystem"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/filesystem/issues",
+                "source": "https://github.com/tomk79/filesystem/tree/1.2.3"
+            },
+            "time": "2023-06-24T15:21:14+00:00"
+        },
+        {
+            "name": "tomk79/h",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/php-h.git",
+                "reference": "25919e75b5d0f57fa73eebc7b5389aab8682ba4f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/php-h/zipball/25919e75b5d0f57fa73eebc7b5389aab8682ba4f",
+                "reference": "25919e75b5d0f57fa73eebc7b5389aab8682ba4f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/h.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "A shorthand of htmlspecialchars().",
+            "support": {
+                "issues": "https://github.com/tomk79/php-h/issues",
+                "source": "https://github.com/tomk79/php-h/tree/0.1.0"
+            },
+            "time": "2015-09-06T03:31:31+00:00"
+        },
+        {
+            "name": "tomk79/langbank",
+            "version": "0.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/node-langbank.git",
+                "reference": "7d1851830c89599638eb1578648d885e00e9153a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/node-langbank/zipball/7d1851830c89599638eb1578648d885e00e9153a",
+                "reference": "7d1851830c89599638eb1578648d885e00e9153a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "^1.0",
+                "twig/twig": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "keywords": [
+                "i18n"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/node-langbank/issues",
+                "source": "https://github.com/tomk79/node-langbank/tree/0.3.1"
+            },
+            "time": "2023-02-04T16:45:04+00:00"
+        },
+        {
+            "name": "tomk79/php-excel2html",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/php-excel2html.git",
+                "reference": "7c131bcc49796b2f51bc01a79e2b5b2af17d3974"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/php-excel2html/zipball/7c131bcc49796b2f51bc01a79e2b5b2af17d3974",
+                "reference": "7c131bcc49796b2f51bc01a79e2b5b2af17d3974",
+                "shasum": ""
+            },
+            "require": {
+                "michelf/php-markdown": "^1.6.0",
+                "php": ">=7.2",
+                "phpoffice/phpspreadsheet": "^1.13",
+                "tomk79/filesystem": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "php/main.php",
+                    "php/render_html_by_csv.php",
+                    "php/render_html_by_excel.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Convert Excel(*.xlsx) to HTML table. with PHPExcel.",
+            "support": {
+                "issues": "https://github.com/tomk79/php-excel2html/issues",
+                "source": "https://github.com/tomk79/php-excel2html/tree/0.1.2"
+            },
+            "time": "2023-02-04T17:14:22+00:00"
+        },
+        {
+            "name": "tomk79/px2-error-reporter",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/px2-error-reporter.git",
+                "reference": "8faca6875960216342af5ec53d5bc19ee506d400"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/px2-error-reporter/zipball/8faca6875960216342af5ec53d5bc19ee506d400",
+                "reference": "8faca6875960216342af5ec53d5bc19ee506d400",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-clover": "~0.2.0",
+                "pickles2/px2-dec": "~2.0",
+                "pickles2/px2-multitheme": "~2.0",
+                "pickles2/px2-path-resolver": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "pickles2/px2-remove-attr": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0||~2.1",
+                "tomk79/px2-serve": "~0.1.3",
+                "vlucas/phpdotenv": "~5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\px2ErrorReporter\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 Error Reporting Plugin.",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/px2-error-reporter/issues",
+                "source": "https://github.com/tomk79/px2-error-reporter/tree/0.1.1"
+            },
+            "time": "2023-09-23T16:30:06+00:00"
+        },
+        {
+            "name": "tomk79/px2-page-list-generator",
+            "version": "2.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/px2-page-list-generator.git",
+                "reference": "458bc4b70d4a25905c6454082342e802aa85b878"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/px2-page-list-generator/zipball/458bc4b70d4a25905c6454082342e802aa85b878",
+                "reference": "458bc4b70d4a25905c6454082342e802aa85b878",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "twig/twig": ">=1.35"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/broccoli-module-fess": "*",
+                "pickles2/broccoli-module-plain-html-elements": "*",
+                "pickles2/px-fw-2.x": "~2.1||~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0",
+                "tomk79/px2-serve": "~0.1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\pageListGenerator\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、ページ一覧画面を生成する機能を追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/px2-page-list-generator/issues",
+                "source": "https://github.com/tomk79/px2-page-list-generator/tree/2.2.0"
+            },
+            "time": "2023-03-11T03:03:21+00:00"
+        },
+        {
+            "name": "tomk79/px2-scss",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/px2-scss.git",
+                "reference": "1bf8d84e54d1c984404bcc4f9d0e2e0f954fa645"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/px2-scss/zipball/1bf8d84e54d1c984404bcc4f9d0e2e0f954fa645",
+                "reference": "1bf8d84e54d1c984404bcc4f9d0e2e0f954fa645",
+                "shasum": ""
+            },
+            "require": {
+                "leafo/scssphp": ">=0.7",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/broccoli-module-fess": "dev-develop",
+                "pickles2/broccoli-module-plain-html-elements": "dev-develop",
+                "pickles2/px-fw-2.x": "~2.0",
+                "pickles2/px2-px2dthelper": "~2.0",
+                "pickles2/px2-sitemapexcel": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\px2scss\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 に、SCSSプロセッサー機能を追加します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/px2-scss/issues",
+                "source": "https://github.com/tomk79/px2-scss/tree/0.1.2"
+            },
+            "time": "2023-02-11T08:25:14+00:00"
+        },
+        {
+            "name": "tomk79/px2-serve",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/px2-serve.git",
+                "reference": "5e8e0ab59031fb5dcfdee0f6c7774d7d594d61b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/px2-serve/zipball/5e8e0ab59031fb5dcfdee0f6c7774d7d594d61b4",
+                "reference": "5e8e0ab59031fb5dcfdee0f6c7774d7d594d61b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "pickles2/px-fw-2.x": "~2",
+                "pickles2/px2-px2dthelper": "~2",
+                "pickles2/px2-sitemapexcel": "~2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\pickles2\\px2serve\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Pickles 2 の開発用ローカルサーバーを起動します。",
+            "keywords": [
+                "pickles2"
+            ],
+            "support": {
+                "issues": "https://github.com/tomk79/px2-serve/issues",
+                "source": "https://github.com/tomk79/px2-serve/tree/0.1.4"
+            },
+            "time": "2022-05-22T10:11:33+00:00"
+        },
+        {
+            "name": "tomk79/remote-finder",
+            "version": "0.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/node-remote-finder.git",
+                "reference": "d3f5249409c4ef78d8626f1c0a6aa0d323889643"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/node-remote-finder/zipball/d3f5249409c4ef78d8626f1c0a6aa0d323889643",
+                "reference": "d3f5249409c4ef78d8626f1c0a6aa0d323889643",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.5",
+                "tomk79/request": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\remoteFinder\\": [
+                        "php/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "Finder や Explorer のように、サーバー上のファイルとフォルダを操作するUIを提供します。",
+            "support": {
+                "issues": "https://github.com/tomk79/node-remote-finder/issues",
+                "source": "https://github.com/tomk79/node-remote-finder/tree/0.2.4"
+            },
+            "time": "2023-11-12T15:37:06+00:00"
+        },
+        {
+            "name": "tomk79/request",
+            "version": "1.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tomk79/request.git",
+                "reference": "069f989dbe19fc8db0ae09ab4dc9444cab61ac32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tomk79/request/zipball/069f989dbe19fc8db0ae09ab4dc9444cab61ac32",
+                "reference": "069f989dbe19fc8db0ae09ab4dc9444cab61ac32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3.0",
+                "tomk79/filesystem": "~1.1"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "~3.0.0",
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tomk79\\": [
+                        "php"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tomoya Koyanagi",
+                    "email": "tomk79@gmail.com"
+                }
+            ],
+            "description": "A request management utilitiy for PHP.",
+            "support": {
+                "issues": "https://github.com/tomk79/request/issues",
+                "source": "https://github.com/tomk79/request/tree/1.4.1"
+            },
+            "time": "2023-05-01T13:02:18+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "aeeec9a5e907a79e50a6bb78979154599401726e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/aeeec9a5e907a79e50a6bb78979154599401726e",
+                "reference": "aeeec9a5e907a79e50a6bb78979154599401726e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php80": "^1.22"
+            },
+            "require-dev": {
+                "psr/container": "^1.0|^2.0",
+                "symfony/phpunit-bridge": "^5.4.9|^6.3|^7.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/3.x"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-11-21T18:55:42+00:00"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "5.4.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "dd46c263f277573244c517bac125a78f67b83a98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/dd46c263f277573244c517bac125a78f67b83a98",
+                "reference": "dd46c263f277573244c517bac125a78f67b83a98",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "graham-campbell/result-type": "^1.0.2",
+                "php": "^7.1.3 || ^8.0",
+                "phpoption/phpoption": "^1.8",
+                "symfony/polyfill-ctype": "^1.23",
+                "symfony/polyfill-mbstring": "^1.23.1",
+                "symfony/polyfill-php80": "^1.23.1"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "ext-filter": "*",
+                "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "https://github.com/vlucas"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "support": {
+                "issues": "https://github.com/vlucas/phpdotenv/issues",
+                "source": "https://github.com/vlucas/phpdotenv/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-12-17T00:42:26+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.3.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
