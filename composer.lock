@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b435ab86b4145cc0e6c121bf0d5a769",
+    "content-hash": "4d4f563467b3ed069a91ba46a270ddf4",
     "packages": [
         {
             "name": "broccoli-html-editor/broccoli-field-summernote",
@@ -1250,64 +1250,6 @@
                 "source": "https://github.com/pickles2/px2-multitheme/tree/develop"
             },
             "time": "2023-07-01T17:04:57+00:00"
-        },
-        {
-            "name": "pickles2/px2-paprika",
-            "version": "0.4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pickles2/px2-paprika.git",
-                "reference": "7721c12bbdeb49ff40d0bc8dadb1da310e17be3f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pickles2/px2-paprika/zipball/7721c12bbdeb49ff40d0bc8dadb1da310e17be3f",
-                "reference": "7721c12bbdeb49ff40d0bc8dadb1da310e17be3f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.3.0",
-                "tomk79/filesystem": "~1.0",
-                "tomk79/request": "~1.0"
-            },
-            "require-dev": {
-                "jms/serializer": "<1.8",
-                "phpunit/phpunit": "~9.5",
-                "pickles2/px-fw-2.x": "~2.0",
-                "pickles2/px2-multitheme": "~2.0",
-                "pickles2/px2-path-resolver": "~2.0",
-                "pickles2/px2-publish-ex": "~2.0",
-                "pickles2/px2-px2dthelper": "~2.0",
-                "pickles2/px2-remove-attr": "~2.0",
-                "pickles2/px2-sitemapexcel": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "picklesFramework2\\paprikaFramework\\": [
-                        "php"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tomoya Koyanagi",
-                    "email": "tomk79@gmail.com"
-                }
-            ],
-            "description": "Publishing Lightweight Web Application with \"Pickles 2\".",
-            "keywords": [
-                "pickles2"
-            ],
-            "support": {
-                "issues": "https://github.com/pickles2/px2-paprika/issues",
-                "source": "https://github.com/pickles2/px2-paprika/tree/0.4.0"
-            },
-            "time": "2023-04-22T12:42:35+00:00"
         },
         {
             "name": "pickles2/px2-path-resolver",

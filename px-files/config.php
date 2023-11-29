@@ -44,7 +44,7 @@ return call_user_func( function(){
 	 * 本番環境のドメイン
 	 * (例: www.example.com, 192.168.0.1, www.example.com:8080, etc...)
 	 */
-	$conf->domain = null;
+	$conf->domain = 'tomk79.github.io';
 
 	/** コンテンツルートディレクトリ */
 	$conf->path_controot = '/';
@@ -158,17 +158,6 @@ return call_user_func( function(){
 		'*.direct/*' => 'direct',
 		'*.direct.*' => 'direct',
 
-		'/px2-paprika/*' => 'ignore',
-		'/px2-clover/*' => 'ignore',
-		'/app-babycorn/*' => 'ignore',
-		'/app-burdock/*' => 'ignore',
-		'/app-onion-slice/*' => 'ignore',
-		'/app-asazuke/*' => 'ignore',
-
-		'/paprika-files/*.php' => 'php', // for Paprika
-		'/paprika-files/*' => 'pass', // for Paprika
-		'*.php' => 'php', // for Paprika
-
 		'*.html' => 'html',
 		'*.htm' => 'html',
 		'*.css' => 'css',
@@ -194,7 +183,6 @@ return call_user_func( function(){
 	$conf->paths_enable_sitemap = array(
 		'*.html',
 		'*.htm',
-		'*.php', // <- add (for Paprika)
 	);
 
 
@@ -329,16 +317,6 @@ return call_user_func( function(){
 		// PX=px2dthelper
 		'tomk79\pickles2\px2dthelper\main::register',
 
-		// Paprika - PHPアプリケーションフレームワーク
-		// before_content の先頭に設定してください。
-		'picklesFramework2\paprikaFramework\main::before_content('.json_encode( array(
-			// アプリケーションが動的に生成したコンテンツエリアの名称
-			'bowls' => array('custom_area_1', 'custom_area_2', ),
-
-			// Paprika を適用する拡張子の一覧
-			'exts' => array('php'),
-		) ).')',
-
 	);
 
 
@@ -406,9 +384,6 @@ return call_user_func( function(){
 	);
 
 	$conf->funcs->processor->php = array(
-		// Paprika - PHPアプリケーションフレームワーク
-		'picklesFramework2\paprikaFramework\main::processor',
-
 		// html のデフォルトの処理を追加
 		$conf->funcs->processor->html,
 	);
