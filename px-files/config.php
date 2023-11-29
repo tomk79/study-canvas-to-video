@@ -56,7 +56,7 @@ return call_user_func( function(){
 	$conf->path_top = '/';
 
 	/** パブリッシュ先ディレクトリパス */
-	$conf->path_publish_dir = '../dist/';
+	$conf->path_publish_dir = '../docs/';
 
 	/** 公開キャッシュディレクトリ */
 	$conf->public_cache_dir = '/common/px_resources/';
