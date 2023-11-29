@@ -18,13 +18,13 @@ return call_user_func( function(){
 	// project
 
 	/** サイト名 */
-	$conf->name = 'Pickles 2';
+	$conf->name = '(STUDY)';
 
 	/** キャッチフレーズ */
-	$conf->tagline = 'DB不要、ファイルベースのPHP製静的CMS';
+	$conf->tagline = null;
 
 	/** コピーライト表記 */
-	$conf->copyright = '2001-2023 Tomoya Koyanagi, and Pickles Project';
+	$conf->copyright = null;
 
 	/** デフォルトの言語 */
 	$conf->default_lang = 'ja';
@@ -44,7 +44,7 @@ return call_user_func( function(){
 	 * 本番環境のドメイン
 	 * (例: www.example.com, 192.168.0.1, www.example.com:8080, etc...)
 	 */
-	$conf->domain = 'pickles2.com';
+	$conf->domain = null;
 
 	/** コンテンツルートディレクトリ */
 	$conf->path_controot = '/';
