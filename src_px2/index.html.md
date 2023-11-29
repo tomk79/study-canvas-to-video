@@ -3,7 +3,7 @@
 これは、 Canvas から 動画ファイルを生成する練習です。
 
 <div class="cont-canvas">
-    <canvas id="cont-canvas"></canvas>
+    <canvas id="cont-canvas" width="150" height="150"></canvas>
 </div>
 
 <ul>

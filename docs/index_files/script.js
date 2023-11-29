@@ -10,11 +10,16 @@ $(function(){
         const canvas = document.getElementById('cont-canvas');
         ctx = canvas.getContext('2d');
 
+        ctx.fillStyle = '#ccc';
+        ctx.rect(0, 0, 150, 150);
+        ctx.fill();
+
         const stream = canvas.captureStream();
         recorder = new MediaRecorder(
             stream,
             {
                 mimeType: 'video/webm',
+                // mimeType: 'video/webm;codecs=h264',
             }
         );
 
